@@ -23,6 +23,10 @@ Rails.application.configure do
   # Raise exceptions instead of rendering exception templates.
   config.action_dispatch.show_exceptions = false
 
+
+
+config.action_mailer.delivery_method = :test
+      config.action_mailer.default_url_options = { host: 'localhost:3000' }
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
