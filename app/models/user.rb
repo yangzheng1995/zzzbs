@@ -61,9 +61,9 @@ class User < ActiveRecord::Base
   end
 
   #发送激活邮箱
-  def send_activation_email
-    UserMailer.account_activation(self).deliver_now
-  end
+  # def send_activation_email
+  #   UserMailer.account_activation(self).deliver_now
+  # end
   
   #设置密码重设相关属性
   def create_reset_digest
